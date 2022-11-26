@@ -80,6 +80,7 @@ main {
   border-radius: 7px;
   color: 	#333333;
   letter-spacing: 2px;
+  word-wrap: break-word;
 }
 
 
@@ -105,6 +106,7 @@ main {
   border-radius: 7px;
   color: 	#333333;
   letter-spacing: 2px;
+  word-wrap: break-word;
 }
 
 
@@ -125,6 +127,7 @@ main {
   border: none;
   font-size: 18px;
   letter-spacing: 2px;
+  word-wrap: break-word;
 }
 
 #button {
