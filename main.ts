@@ -3,6 +3,7 @@ const btn = <HTMLInputElement>document.getElementById('button');
 const chat = <HTMLDivElement>document.getElementById('chat');
 const textarea = <HTMLInputElement>document.getElementById('textarea');
 
+
 // どちらが送信したのか判別するための変数
 let isMyself: boolean = true;
 
@@ -10,7 +11,8 @@ let isMyself: boolean = true;
 // 自分が送信する際の処理
 function mySend() {
   if (textarea.value !== "") {
-      // textareaに入力されたテキストを取得
+
+  // textareaに入力されたテキストを取得
   let Message: string = textarea.value;
   
   // #chatの子要素になるdiv要素を生成しクラスを付与
@@ -55,7 +57,8 @@ function mySend() {
 //  相手が送信する際の処理
 function otherSend() {
   if (textarea.value !== "") {
-      // textareaに入力されたテキストを取得
+
+  // textareaに入力されたテキストを取得
   let Message: string = textarea.value;
   
   // #chatの子要素になるdiv要素を生成しクラスを付与
@@ -110,6 +113,7 @@ function showTime() {
 
 // 送信ボタンクリック時にイベント発火
 btn.addEventListener('click', function() {
+  // 送信者を交互に判別
   if (isMyself === true) {
     mySend();
   } else {
